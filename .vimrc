@@ -17,6 +17,11 @@ Plug 'neoclide/coc.nvim', {'tag': '*', 'branch': 'release'}
 " Or build from source code by use yarn: https://yarnpkg.com
 Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
 
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
+
+Plug 'tpope/vim-projectionist'
+
 " Initialize plugin system
 call plug#end()
 
@@ -46,4 +51,4 @@ inoremap jk <esc>
 " Disable Esp key in insert mode
 "inoremap <esc> <nop>
 
-
+nnoremap <C-p> :<C-u>FZF<CR>
