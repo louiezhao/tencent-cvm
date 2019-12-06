@@ -21,6 +21,8 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 
 Plug 'tpope/vim-projectionist'
+Plug 'tpope/vim-dispatch'
+Plug 'tpope/vim-vinegar'
 
 " Initialize plugin system
 call plug#end()
@@ -52,3 +54,16 @@ inoremap jk <esc>
 "inoremap <esc> <nop>
 
 nnoremap <C-p> :<C-u>FZF<CR>
+nnoremap <C-g> :<C-u>Rg<CR>
+
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
+nnoremap <Leader>l :bfirst<CR>
+nnoremap <Leader>k :bprevious<CR>
+nnoremap <Leader>j :bnext<CR>
+nnoremap <Leader>h :blast<CR>
+
+nnoremap <C-b> :ls<CR>:b<Space>
