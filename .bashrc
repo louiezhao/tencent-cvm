@@ -117,5 +117,6 @@ if ! shopt -oq posix; then
 fi
 
 export FZF_DEFAULT_COMMAND='rg --files --hidden'
+export PATH=/home/ubuntu/.cache/rebar3/bin:$PATH
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash

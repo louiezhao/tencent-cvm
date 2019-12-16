@@ -23,6 +23,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-projectionist'
 Plug 'tpope/vim-dispatch'
 Plug 'tpope/vim-vinegar'
+Plug 'tpope/vim-fugitive'
 
 " Initialize plugin system
 call plug#end()
@@ -67,3 +68,4 @@ nnoremap <Leader>j :bnext<CR>
 nnoremap <Leader>h :blast<CR>
 
 nnoremap <C-b> :ls<CR>:b<Space>
+nnoremap <Space> i_<Esc>r
