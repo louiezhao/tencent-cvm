@@ -25,6 +25,9 @@ Plug 'tpope/vim-dispatch'
 Plug 'tpope/vim-vinegar'
 Plug 'tpope/vim-fugitive'
 
+Plug 'jimeh/tmux-themepack'
+Plug 'itchyny/lightline.vim'
+
 " Initialize plugin system
 call plug#end()
 
@@ -34,6 +37,9 @@ let g:mix_format_on_save = 1
 set number
 " Set relative number by default
 set relativenumber
+
+" https://github.com/itchyny/lightline.vim
+set laststatus=2
 
 " Make j and k move to the next row, not file line
 nnoremap j gj
@@ -62,10 +68,10 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
-nnoremap <Leader>l :bfirst<CR>
-nnoremap <Leader>k :bprevious<CR>
-nnoremap <Leader>j :bnext<CR>
-nnoremap <Leader>h :blast<CR>
+nnoremap <Leader>h :bfirst<CR>
+nnoremap <Leader>j :bprevious<CR>
+nnoremap <Leader>k :bnext<CR>
+nnoremap <Leader>l :blast<CR>
 
 nnoremap <C-b> :ls<CR>:b<Space>
 nnoremap <Space> i_<Esc>r
